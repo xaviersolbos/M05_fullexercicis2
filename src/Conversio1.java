@@ -16,6 +16,6 @@ public class Conversio1 {
         int valor_euros = sc.nextInt();
                 
         double tipus_de_canvi = 0.87d;
-        System.out.println(valor_euros + " eur0s (€) acatualmentt ewuivalen a" + (valor_euros * tipus_de_canvi) + " lliures esterlines (£)");
+        System.out.println(valor_euros + " euros (€) actualment equivalen a " + (valor_euros * tipus_de_canvi) + " lliures esterlines (£)");
     }
 }
