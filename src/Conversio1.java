@@ -12,10 +12,34 @@ public class Conversio1 {
         
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("Introdueix en €");
+          System.out.println("Prem 1 per passar d'EURO a LLIURA");
+          
+          System.out.println("Prem 2 per passar de LLIURA a EURO");
+        
+          int opcio = sc.nextInt();
+          
+          if ( opcio == 1) {
+              System.out.println("Introdueix en €");
         int valor_euros = sc.nextInt();
                 
-        double tipus_de_canvi = 0.87d;
-        System.out.println(valor_euros + " euros (€) actualment equivalen a " + (valor_euros * tipus_de_canvi) + " lliures esterlines (£)");
+        double tipus_de_canvi_eur = 0.87d;
+        System.out.println(valor_euros + " euros (€) actualment equivalen a " + (valor_euros * tipus_de_canvi_eur) + " lliures esterlines (£)");
+              
+          }
+          
+          if ( opcio == 2) {
+              System.out.println("Introdueix en £");
+        int valor_lliures = sc.nextInt();
+                
+        double tipus_de_canvi_lliu = 1.14d;
+        System.out.println(valor_lliures + " lliures (£) actualment equivalen a " + (valor_lliures * tipus_de_canvi_lliu) + " euros (€)");
+              
+          }
+              
+          
+          
+          
+          
+        
     }
 }
